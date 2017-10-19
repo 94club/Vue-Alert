@@ -4,10 +4,10 @@
             <h5>{{ title }} <span class="close" title="关闭" @click="close">X</span></h5>
             <div class="container"> <span><div class="el-message-box__status el-icon-information"></div></span> {{ message }}</div>
             <div v-if="type === 'info'">
-                <button class="btn-primary" @click="confirm" name='info-confirm'>确定</button>
+                <button class="btn-primary" autofocus @click="confirm" @keyup.enter="confirm" name='info-confirm'>确定</button>
             </div>
             <div v-else>
-                <button class="btn-primary" @click="confirm" name="confirm-confirm">确定</button>
+                <button class="btn-primary" autofocus @click="confirm" @keyup.enter="confirm" name="confirm-confirm">确定</button>
                 <button class="btn-primary" @click="cancle" name="confirm-cancle">取消</button>
             </div>
         </article>
