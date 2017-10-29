@@ -28,13 +28,13 @@ export default {
     methods: {
         confirm () {
             this.hidden();
-            if (this.onConfirm) {
+            if (typeof this.onConfirm === 'function') {
                 this.onConfirm()
             }
         },
         cancle () {
             this.hidden();
-            if (this.onCancle) {
+            if (typeof this.onCancle === 'function') {
                 this.onCancle()
             }
         },
