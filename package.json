@@ -1,5 +1,5 @@
 {
-  "name": "vue-alert",
+  "name": "ve-alert-",
   "version": "1.0.1",
   "description": "vue-alert",
   "main": "index.js",
@@ -12,7 +12,7 @@
   },
   "keywords": [
     "alert",
-    "vue-alert"
+    "ve-alert"
   ],
   "author": "the_last",
   "license": "ISC",

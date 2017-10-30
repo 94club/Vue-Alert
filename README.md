@@ -5,10 +5,10 @@
 
 - Vue 版本 2.4.2
 
-- 安装方法 npm install Vue-Alert
+- 安装方法 npm install ve-Alert
 
 ```
-  import Vue-Alert from 'Vue-Alert'
+  import Vue-Alert from 've-Alert'
 
   Vue.prototype.$alert = Vue-Alert
 

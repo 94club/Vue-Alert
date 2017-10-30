@@ -1,29 +1,92 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'D:\\Object\\Node-6.10.0\\node.exe',
 1 verbose cli   'D:\\Object\\Node-6.10.0\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'config',
-1 verbose cli   'get',
-1 verbose cli   'prefix' ]
+1 verbose cli   'publish',
+1 verbose cli   've-alert' ]
 2 info using npm@3.10.10
 3 info using node@v6.10.0
-4 verbose stack Error: EPERM: operation not permitted, mkdir 'C:\Program Files\nodejs'
-4 verbose stack     at Error (native)
-5 verbose cwd d:\Object\Git\me\Vue-Alert
-6 error Windows_NT 10.0.14393
-7 error argv "D:\\Object\\Node-6.10.0\\node.exe" "D:\\Object\\Node-6.10.0\\node_modules\\npm\\bin\\npm-cli.js" "config" "get" "prefix"
-8 error node v6.10.0
-9 error npm  v3.10.10
-10 error path C:\Program Files\nodejs
-11 error code EPERM
-12 error errno -4048
-13 error syscall mkdir
-14 error Error: EPERM: operation not permitted, mkdir 'C:\Program Files\nodejs'
-14 error     at Error (native)
-14 error  { Error: EPERM: operation not permitted, mkdir 'C:\Program Files\nodejs'
-14 error     at Error (native)
-14 error   errno: -4048,
-14 error   code: 'EPERM',
-14 error   syscall: 'mkdir',
-14 error   path: 'C:\\Program Files\\nodejs' }
-15 error Please try running this command again as root/Administrator.
-16 verbose exit [ -4048, true ]
+4 verbose publish [ 've-alert' ]
+5 silly cache add args [ 've-alert', null ]
+6 verbose cache add spec ve-alert
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: 've-alert',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: 've-alert',
+7 silly cache add   name: 've-alert',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: 'latest',
+7 silly cache add   type: 'tag' }
+8 silly addNamed ve-alert@latest
+9 verbose addNamed "latest" is being treated as a dist-tag for ve-alert
+10 info addNameTag [ 've-alert', 'latest' ]
+11 silly mapToRegistry name ve-alert
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry http://registry.npmjs.org/
+14 silly mapToRegistry data Result {
+14 silly mapToRegistry   raw: 've-alert',
+14 silly mapToRegistry   scope: null,
+14 silly mapToRegistry   escapedName: 've-alert',
+14 silly mapToRegistry   name: 've-alert',
+14 silly mapToRegistry   rawSpec: '',
+14 silly mapToRegistry   spec: 'latest',
+14 silly mapToRegistry   type: 'tag' }
+15 silly mapToRegistry uri http://registry.npmjs.org/ve-alert
+16 verbose addNameTag registry:http://registry.npmjs.org/ve-alert not in flight; fetching
+17 verbose request uri http://registry.npmjs.org/ve-alert
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 10:42:39
+20 verbose request using bearer token for auth
+21 verbose request id bd79ad125a7a662c
+22 http request GET http://registry.npmjs.org/ve-alert
+23 http 404 http://registry.npmjs.org/ve-alert
+24 verbose headers { 'content-type': 'application/json',
+24 verbose headers   'cache-control': 'max-age=0',
+24 verbose headers   'content-length': '2',
+24 verbose headers   'accept-ranges': 'bytes',
+24 verbose headers   date: 'Mon, 30 Oct 2017 02:42:42 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-lax8626-LAX',
+24 verbose headers   'x-cache': 'MISS',
+24 verbose headers   'x-cache-hits': '0',
+24 verbose headers   'x-timer': 'S1509331362.051075,VS0,VE349',
+24 verbose headers   vary: 'Accept-Encoding' }
+25 silly get cb [ 404,
+25 silly get   { 'content-type': 'application/json',
+25 silly get     'cache-control': 'max-age=0',
+25 silly get     'content-length': '2',
+25 silly get     'accept-ranges': 'bytes',
+25 silly get     date: 'Mon, 30 Oct 2017 02:42:42 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-lax8626-LAX',
+25 silly get     'x-cache': 'MISS',
+25 silly get     'x-cache-hits': '0',
+25 silly get     'x-timer': 'S1509331362.051075,VS0,VE349',
+25 silly get     vary: 'Accept-Encoding' } ]
+26 verbose stack Error: Registry returned 404 for GET on http://registry.npmjs.org/ve-alert
+26 verbose stack     at makeError (D:\Object\Node-6.10.0\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+26 verbose stack     at CachingRegistryClient.<anonymous> (D:\Object\Node-6.10.0\node_modules\npm\node_modules\npm-registry-client\lib\request.js:280:14)
+26 verbose stack     at Request._callback (D:\Object\Node-6.10.0\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+26 verbose stack     at Request.self.callback (D:\Object\Node-6.10.0\node_modules\npm\node_modules\request\request.js:187:22)
+26 verbose stack     at emitTwo (events.js:106:13)
+26 verbose stack     at Request.emit (events.js:191:7)
+26 verbose stack     at Request.<anonymous> (D:\Object\Node-6.10.0\node_modules\npm\node_modules\request\request.js:1048:10)
+26 verbose stack     at emitOne (events.js:96:13)
+26 verbose stack     at Request.emit (events.js:188:7)
+26 verbose stack     at IncomingMessage.<anonymous> (D:\Object\Node-6.10.0\node_modules\npm\node_modules\request\request.js:969:12)
+27 verbose statusCode 404
+28 verbose pkgid ve-alert
+29 verbose cwd D:\Object\Git\me\Vue-Alert
+30 error Windows_NT 10.0.14393
+31 error argv "D:\\Object\\Node-6.10.0\\node.exe" "D:\\Object\\Node-6.10.0\\node_modules\\npm\\bin\\npm-cli.js" "publish" "ve-alert"
+32 error node v6.10.0
+33 error npm  v3.10.10
+34 error code E404
+35 error 404 Registry returned 404 for GET on http://registry.npmjs.org/ve-alert
+36 error 404
+37 error 404 've-alert' is not in the npm registry.
+38 error 404 You should bug the author to publish it (or use the name yourself!)
+39 error 404 Note that you can also install from a
+40 error 404 tarball, folder, http url, or git url.
+41 verbose exit [ 1, true ]
